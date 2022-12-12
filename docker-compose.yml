@@ -7,5 +7,6 @@ services:
     container_name: react-waldo-portfolio
     stdin_open: true
     restart: always
-    ports: "9500:3000"
+    ports:
+      - "3003:3000"
 
