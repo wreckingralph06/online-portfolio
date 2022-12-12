@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  react-waldo-portfolio:
+    image: react-waldo-portfolio
+    build: .
+    container_name: react-waldo-portfolio
+    stdin_open: true
+    restart: always
+    ports: "9500:3000"
+
