@@ -12,6 +12,7 @@ import vuejs_logo from "../public/vuejs_logo.png";
 import Image from "next/image";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Link from "next/link";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -28,17 +29,17 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="text-xl">Ralph Waldo Candaza</h1>
             <ul className="flex items-center">
-              {/* <li>
-                <a
+              <li>
+                <Link
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  href="/projects"
                 >
-                  Resume
-                </a>
-              </li> */}
+                  Sample Projects
+                </Link>
+              </li>
             </ul>
           </nav>
-          <Carousel>
+          <Carousel showArrows="true">
             <div class="profile-banner shadow-lg p-10 rounded-xl dark:bg-white">
               <div class="profile-banner-pic rounded-lg overflow-hidden">
                 <Image src={profilePictureCropped}/>
@@ -64,7 +65,7 @@ export default function Home() {
                   Frontend
                 </h3>
                 <div style={{display: 'flex'}}>
-                  <div class='react-section'>
+                  <div class='react-section'> 
                     <div class="tech-stack-img rounded-lg overflow-hidden">
                       <Image src={reactjs_logo}/>
                     </div>
