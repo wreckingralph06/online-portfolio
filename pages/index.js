@@ -1,11 +1,17 @@
 import Head from "next/head";
 import {
   AiFillLinkedin,
+  AiOutlineMail,
+  AiOutlineMobile
 } from "react-icons/ai";
 import { useState } from "react";
 import profilePictureCropped from "../public/profile-picture-cropped.jpg";
 import stratpointLogo from "../public/stratpoint.png";
+import reactjs_logo from "../public/reactjs_logo.png";
+import vuejs_logo from "../public/vuejs_logo.png";
 import Image from "next/image";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -32,22 +38,52 @@ export default function Home() {
               </li> */}
             </ul>
           </nav>
-          <div className="flex text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-            <div className="basis-1/4 flex-1 mx-auto bg-gradient-to-b from-teal-400 rounded-full relative overflow-hidden md:h-84 md:w-84">
-              <Image src={profilePictureCropped} objectFit="cover"/>
-            </div>
-            <div className="basis-1/2 flex-1">
-              <h2 className="text-5xl py-2 font-medium dark:text-teal-600 md:text-6xl mb-2">
-                Ralph Waldo Candaza
-              </h2>
-              <h3 className="text-2xl py-2 md:text-3xl mb-2">
-                Software Engineer/<br/>Web Developer
-              </h3>
-              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-                <a href="https://www.linkedin.com/in/rwccandaza/"><AiFillLinkedin /></a>
+          <Carousel>
+            <div class="profile-banner shadow-lg p-10 rounded-xl dark:bg-white">
+              <div class="profile-banner-pic rounded-lg overflow-hidden">
+                <Image src={profilePictureCropped}/>
+              </div>
+              <div className="profile-banner-details">
+                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                  Ralph Waldo Candaza
+                </h2>
+                <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
+                  Software Engineer/<br/>Web Developer
+                </h3>
+                <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+                  <a href="https://www.linkedin.com/in/rwccandaza/"><AiFillLinkedin /></a>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
+              <div className="tech-stack-details">
+                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                  Tech Stack
+                </h2>
+                <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
+                  Frontend
+                </h3>
+                <div style={{display: 'flex'}}>
+                  <div class='react-section'>
+                    <div class="tech-stack-img rounded-lg overflow-hidden">
+                      <Image src={reactjs_logo}/>
+                    </div>
+                    <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
+                      ReactJS
+                    </h3>
+                  </div>
+                  <div class='vue-section'>
+                    <div class="tech-stack-img rounded-lg overflow-hidden">
+                      <Image src={vuejs_logo}/>
+                    </div>
+                    <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
+                      VueJS
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Carousel>
         </section>
         <section>
           <div className="about-me my-8">
@@ -70,7 +106,7 @@ export default function Home() {
             <div className="stratpoint flex justify-between my-4">
               <div className="basis-1/4">
                 <div className="basis-1/4 flex-1 mx-auto bg-gradient-to-b from-teal-400 rounded-full relative overflow-hidden md:h-84 md:w-84">
-                  <Image src={stratpointLogo} objectFit="cover"/>
+                  <Image src={stratpointLogo}/>
                 </div>
               </div>
               <div className="basis-1/2">
@@ -139,12 +175,12 @@ export default function Home() {
           </div>
           <div className="skills-and-character my-8">
             <h3 className="text-3xl py-1 dark:text-white ">Contact Me</h3>
-            <hr class="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 mb-8">
-              Email - ralphwaldocandaza@gmail.com <br />
-              Mobile - +63 945 143 7325 <br />
-              LinkedIn - linkedin.com/in/rwccandaza <br />
-            </p>
+            <hr class="my-2 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
+            <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 mb-8">
+              <div className="flex"><AiOutlineMail className="detail-img-mail m-2"/> <p>- ralphwaldocandaza@gmail.com </p></div>
+              <div className="flex"><AiOutlineMobile className="detail-img-mobile m-2"/> <p>- +63 945 143 7325 </p></div>
+              <div className="flex"><AiFillLinkedin className="detail-img-linkedin m-2"/> <p>- linkedin.com/in/rwccandaza </p></div>
+            </div>
           </div>
         </section>
       </main>
