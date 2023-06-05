@@ -9,6 +9,10 @@ import profilePictureCropped from "../public/profile-picture-cropped.jpg";
 import stratpointLogo from "../public/stratpoint.png";
 import reactjs_logo from "../public/reactjs_logo.png";
 import vuejs_logo from "../public/vuejs_logo.png";
+import nodejs_logo from "../public/reactjs_logo.png";
+import git_logo from "../public/git_logo.png";
+import github_logo from "../public/github_logo.png";
+import gitlab_logo from "../public/gitlab_logo.png";
 import Image from "next/image";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -84,6 +88,62 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div class="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
+              <div className="tech-stack-details">
+                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                  Tech Stack
+                </h2>
+                <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
+                  Backend
+                </h3>
+                <div style={{display: 'flex'}}>
+                  <div class='react-section'> 
+                    <div class="tech-stack-img rounded-lg overflow-hidden">
+                      <Image src={nodejs_logo}/>
+                    </div>
+                    <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
+                      NodeJS
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
+              <div className="tech-stack-details">
+                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                  Tech Stack
+                </h2>
+                <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
+                  Work Tools
+                </h3>
+                <div style={{display: 'flex'}}>
+                  <div> 
+                    <div class="tech-stack-img rounded-lg overflow-hidden">
+                      <Image src={git_logo}/>
+                    </div>
+                    <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
+                      Git
+                    </h3>
+                  </div>
+                  <div> 
+                    <div class="tech-stack-img rounded-lg overflow-hidden">
+                      <Image src={github_logo}/>
+                    </div>
+                    <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
+                      Github
+                    </h3>
+                  </div>
+                  <div> 
+                    <div class="tech-stack-img rounded-lg overflow-hidden">
+                      <Image src={gitlab_logo}/>
+                    </div>
+                    <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
+                      Gitlab
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
           </Carousel>
         </section>
         <section>
@@ -95,10 +155,8 @@ export default function Home() {
               <span className="text-teal-500"> Frontend Development </span>
               and also willing to learn other frameworks related to <span className="text-teal-500">Web Development </span>  
               and <span className="text-teal-500">Web Design. </span>
-              I am creative and always thinking of ideas that are unique and can stand-out to others.
-              In the workplace, I am friendly, sociable and can go along with co-workers and can also work individually.
-              When it comes to concepts, I can teach with creative analogy. 
-              On my free time, I am an ispiring 3D Artist and content creator. 
+              I also look forward to be a good <span className="text-teal-500">Full-Stack Developer</span> by exploring more backend functionalities and utilize more database management systems. 
+              I am also willing to take certifications which will give me an opportunity to handle advance frameworks which will also improve the upskilling of my technological knowledge.  
             </p>
           </div>
           <div className="work-experience my-8">
