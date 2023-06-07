@@ -1,10 +1,5 @@
 import Head from "next/head";
-import {
-  AiFillLinkedin,
-  AiOutlineMail,
-  AiOutlineMobile
-} from "react-icons/ai";
-import { useState } from "react";
+import { Fragment } from "react";
 import ch_dashboard from "../public/chazydes/ch_dashboard.png";
 import ch_item_list from "../public/chazydes/ch_item_list.png";
 import ch_item_details_page from "../public/chazydes/ch_item_details_page.png";
@@ -12,14 +7,14 @@ import ch_add_transaction from "../public/chazydes/ch_add_transaction.png";
 import ch_transaction_details from "../public/chazydes/ch_transaction_details.png";
 import ch_transactions_list from "../public/chazydes/ch_transactions_list.png";
 import Image from "next/image";
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Link from "next/link";
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
+import { Menu, Transition } from "@headlessui/react";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export default function Projects() {
-
   return (
     <div className="dark">
       <Head>
@@ -29,24 +24,60 @@ export default function Projects() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
+          <nav className="py-10 mb-12 flex justify-between content-center dark:text-white">
             <h1 className="text-xl">
-                <Link
-                    href="/"
-                >
-                  Ralph Waldo Candaza
-                </Link>
+              <Link href="/">Ralph Waldo Candaza</Link>
             </h1>
-            <ul className="flex items-center">
-              <li>
-                <Link
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="/projects"
+            <div className="navbar-tabs flex content-center">
+              <Menu as="div" className="hamburger-only relative ml-3">
+                <Menu.Button className="menu-button ">
+                  <svg
+                    class="w-6 h-6"
+                    aria-hidden="true"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </Menu.Button>
+                <Transition
+                  as={Fragment}
+                  enter="transition ease-out duration-100"
+                  enterFrom="transform opacity-0 scale-95"
+                  enterTo="transform opacity-100 scale-100"
+                  leave="transition ease-in duration-75"
+                  leaveFrom="transform opacity-100 scale-100"
+                  leaveTo="transform opacity-0 scale-95"
                 >
-                  Sample Projects
-                </Link>
-              </li>
-            </ul>
+                  <Menu.Items className="menu-items absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <Menu.Item>
+                      <Link
+                        href="/projects"
+                        className="block px-4 py-2 text-sm text-gray-700"
+                      >
+                        Sample Projects
+                      </Link>
+                    </Menu.Item>
+                  </Menu.Items>
+                </Transition>
+              </Menu>
+
+              <ul className="hamburger-tabs flex items-center">
+                <li>
+                  <Link
+                    className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                    href="/projects"
+                  >
+                    Sample Projects
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </nav>
           <Carousel showArrows="true">
             <div class="screenshot-section sc1 shadow-lg p-10 rounded-xl dark:bg-white">
@@ -55,12 +86,12 @@ export default function Projects() {
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                Item Inventory System
+                  Item Inventory System
                 </h3>
-                <div style={{display: 'flex'}}>
-                  <div class='vue-section'>
+                <div style={{ display: "flex" }}>
+                  <div class="vue-section">
                     <div class="screenshot-img">
-                      <Image src={ch_dashboard}/>
+                      <Image src={ch_dashboard} />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Dashboard
@@ -75,12 +106,12 @@ export default function Projects() {
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                Item Inventory System
+                  Item Inventory System
                 </h3>
-                <div style={{display: 'flex'}}>
-                  <div class='vue-section'>
+                <div style={{ display: "flex" }}>
+                  <div class="vue-section">
                     <div class="screenshot-img">
-                      <Image src={ch_item_list}/>
+                      <Image src={ch_item_list} />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Item List
@@ -95,12 +126,12 @@ export default function Projects() {
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                Item Inventory System
+                  Item Inventory System
                 </h3>
-                <div style={{display: 'flex'}}>
-                  <div class='vue-section'>
+                <div style={{ display: "flex" }}>
+                  <div class="vue-section">
                     <div class="screenshot-img">
-                      <Image src={ch_item_details_page}/>
+                      <Image src={ch_item_details_page} />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Item Details Page
@@ -115,12 +146,12 @@ export default function Projects() {
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                Item Inventory System
+                  Item Inventory System
                 </h3>
-                <div style={{display: 'flex'}}>
-                  <div class='vue-section'>
+                <div style={{ display: "flex" }}>
+                  <div class="vue-section">
                     <div class="screenshot-img">
-                      <Image src={ch_add_transaction}/>
+                      <Image src={ch_add_transaction} />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Add Transaction
@@ -135,12 +166,12 @@ export default function Projects() {
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                Item Inventory System
+                  Item Inventory System
                 </h3>
-                <div style={{display: 'flex'}}>
-                  <div class='vue-section'>
+                <div style={{ display: "flex" }}>
+                  <div class="vue-section">
                     <div class="screenshot-img">
-                      <Image src={ch_transaction_details}/>
+                      <Image src={ch_transaction_details} />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Transaction Details
@@ -155,12 +186,12 @@ export default function Projects() {
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                Item Inventory System
+                  Item Inventory System
                 </h3>
-                <div style={{display: 'flex'}}>
-                  <div class='vue-section'>
+                <div style={{ display: "flex" }}>
+                  <div class="vue-section">
                     <div class="screenshot-img">
-                      <Image src={ch_transactions_list}/>
+                      <Image src={ch_transactions_list} />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Transactions List
@@ -175,18 +206,18 @@ export default function Projects() {
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                Item Inventory System
+                  Item Inventory System
                 </h3>
-                <div style={{display: 'flex'}}>
-                  <div class='vue-section'>
+                <div style={{ display: "flex" }}>
+                  <div class="vue-section">
                     <div class="screenshot-img">
-                    <ReactPlayer
-                        className='react-player fixed-bottom'
-                        url='videos/add-chopsticks-item.mp4'
+                      <ReactPlayer
+                        className="react-player fixed-bottom"
+                        url="videos/add-chopsticks-item.mp4"
                         controls={true}
-                        width='100%'
-                        height='100%'
-                    />
+                        width="100%"
+                        height="100%"
+                      />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Add Item Demo
@@ -201,18 +232,18 @@ export default function Projects() {
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                Item Inventory System
+                  Item Inventory System
                 </h3>
-                <div style={{display: 'flex'}}>
-                  <div class='vue-section'>
+                <div style={{ display: "flex" }}>
+                  <div class="vue-section">
                     <div class="screenshot-img">
-                    <ReactPlayer
-                        className='react-player fixed-bottom'
-                        url='videos/items-out-of-stock.mp4'
+                      <ReactPlayer
+                        className="react-player fixed-bottom"
+                        url="videos/items-out-of-stock.mp4"
                         controls={true}
-                        width='100%'
-                        height='100%'
-                    />
+                        width="100%"
+                        height="100%"
+                      />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Check Quantity of Items Demo
@@ -227,18 +258,18 @@ export default function Projects() {
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                Item Inventory System
+                  Item Inventory System
                 </h3>
-                <div style={{display: 'flex'}}>
-                  <div class='vue-section'>
+                <div style={{ display: "flex" }}>
+                  <div class="vue-section">
                     <div class="screenshot-img">
-                    <ReactPlayer
-                        className='react-player fixed-bottom'
-                        url='videos/add-transaction.mp4'
+                      <ReactPlayer
+                        className="react-player fixed-bottom"
+                        url="videos/add-transaction.mp4"
                         controls={true}
-                        width='100%'
-                        height='100%'
-                    />
+                        width="100%"
+                        height="100%"
+                      />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Add Transaction Demo
