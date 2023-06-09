@@ -12,6 +12,13 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .navbar {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
 .body-section {
   margin-top: 20px;
 }
@@ -127,7 +134,7 @@
 @media only screen and (max-width: 500px) {
   .hamburger-only {
     display: block;
-    padding: 5px;
+    padding: 10px 5px 0px 5px;
   }
 
   .hamburger-tabs {

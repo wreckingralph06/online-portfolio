@@ -5,7 +5,7 @@ import { Menu, Transition } from "@headlessui/react";
 export default function Navbar() {
   return (
     // <nav className="py-10 mb-12 flex justify-between content-center dark:text-white">
-    <div className="navbar-section px-10 dark:bg-gray-900 md:px-20 lg:px-40 z-40">
+    <div className="navbar-section py-2 px-10 dark:bg-gray-900 md:px-20 lg:px-40 z-40">
       <nav
         className="navbar relative flex items-center justify-between bg-neutral-100 py-4 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 px-10 rounded-xl"
         data-te-navbar-ref
@@ -19,7 +19,7 @@ export default function Navbar() {
               <svg
                 class="w-6 h-6"
                 aria-hidden="true"
-                fill="currentColor"
+                fill="white"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
