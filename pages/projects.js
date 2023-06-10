@@ -37,7 +37,11 @@ export default function Projects() {
                 <div style={{ display: "flex" }}>
                   <div className="vue-section">
                     <div className="screenshot-img">
-                      <Image src={ch_dashboard} alt="ch_dashboard" />
+                      <Image
+                        src={ch_dashboard}
+                        alt="ch_dashboard"
+                        priority={true}
+                      />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Dashboard
@@ -57,7 +61,11 @@ export default function Projects() {
                 <div style={{ display: "flex" }}>
                   <div className="vue-section">
                     <div className="screenshot-img">
-                      <Image src={ch_item_list} alt="ch_item_list" />
+                      <Image
+                        src={ch_item_list}
+                        alt="ch_item_list"
+                        priority={true}
+                      />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Item List
@@ -80,6 +88,7 @@ export default function Projects() {
                       <Image
                         src={ch_item_details_page}
                         alt="ch_item_details_page"
+                        priority={true}
                       />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
@@ -103,6 +112,7 @@ export default function Projects() {
                       <Image
                         src={ch_add_transaction}
                         alt="ch_add_transaction"
+                        priority={true}
                       />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
@@ -126,6 +136,7 @@ export default function Projects() {
                       <Image
                         src={ch_transaction_details}
                         alt="ch_transaction_details"
+                        priority={true}
                       />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
@@ -149,6 +160,7 @@ export default function Projects() {
                       <Image
                         src={ch_transactions_list}
                         alt="ch_transactions_list"
+                        priority={true}
                       />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
