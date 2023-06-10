@@ -25,8 +25,8 @@ export default function Projects() {
       <Navbar />
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <Carousel showArrows="true">
-            <div class="screenshot-section sc1 shadow-lg p-10 rounded-xl dark:bg-white">
+          <Carousel showArrows="true" showThumbs={false}>
+            <div className="screenshot-section sc1 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
                   Chazydes
@@ -35,9 +35,9 @@ export default function Projects() {
                   Item Inventory System
                 </h3>
                 <div style={{ display: "flex" }}>
-                  <div class="vue-section">
-                    <div class="screenshot-img">
-                      <Image src={ch_dashboard} />
+                  <div className="vue-section">
+                    <div className="screenshot-img">
+                      <Image src={ch_dashboard} alt="ch_dashboard" />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Dashboard
@@ -46,7 +46,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div class="screenshot-section sc2 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="screenshot-section sc2 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
                   Chazydes
@@ -55,9 +55,9 @@ export default function Projects() {
                   Item Inventory System
                 </h3>
                 <div style={{ display: "flex" }}>
-                  <div class="vue-section">
-                    <div class="screenshot-img">
-                      <Image src={ch_item_list} />
+                  <div className="vue-section">
+                    <div className="screenshot-img">
+                      <Image src={ch_item_list} alt="ch_item_list" />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Item List
@@ -66,7 +66,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div class="screenshot-section sc3 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="screenshot-section sc3 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
                   Chazydes
@@ -75,9 +75,12 @@ export default function Projects() {
                   Item Inventory System
                 </h3>
                 <div style={{ display: "flex" }}>
-                  <div class="vue-section">
-                    <div class="screenshot-img">
-                      <Image src={ch_item_details_page} />
+                  <div className="vue-section">
+                    <div className="screenshot-img">
+                      <Image
+                        src={ch_item_details_page}
+                        alt="ch_item_details_page"
+                      />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Item Details Page
@@ -86,7 +89,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div class="screenshot-section sc4 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="screenshot-section sc4 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
                   Chazydes
@@ -95,9 +98,12 @@ export default function Projects() {
                   Item Inventory System
                 </h3>
                 <div style={{ display: "flex" }}>
-                  <div class="vue-section">
-                    <div class="screenshot-img">
-                      <Image src={ch_add_transaction} />
+                  <div className="vue-section">
+                    <div className="screenshot-img">
+                      <Image
+                        src={ch_add_transaction}
+                        alt="ch_add_transaction"
+                      />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Add Transaction
@@ -106,7 +112,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div class="screenshot-section sc5 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="screenshot-section sc5 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
                   Chazydes
@@ -115,9 +121,12 @@ export default function Projects() {
                   Item Inventory System
                 </h3>
                 <div style={{ display: "flex" }}>
-                  <div class="vue-section">
-                    <div class="screenshot-img">
-                      <Image src={ch_transaction_details} />
+                  <div className="vue-section">
+                    <div className="screenshot-img">
+                      <Image
+                        src={ch_transaction_details}
+                        alt="ch_transaction_details"
+                      />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Transaction Details
@@ -126,7 +135,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div class="screenshot-section sc6 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="screenshot-section sc6 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
                   Chazydes
@@ -135,9 +144,12 @@ export default function Projects() {
                   Item Inventory System
                 </h3>
                 <div style={{ display: "flex" }}>
-                  <div class="vue-section">
-                    <div class="screenshot-img">
-                      <Image src={ch_transactions_list} />
+                  <div className="vue-section">
+                    <div className="screenshot-img">
+                      <Image
+                        src={ch_transactions_list}
+                        alt="ch_transactions_list"
+                      />
                     </div>
                     <h4 className="screenshot-label text-center dark:text-teal-600">
                       Transactions List
@@ -146,7 +158,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div class="screenshot-section sc7 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="screenshot-section sc7 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
                   Chazydes
@@ -155,8 +167,8 @@ export default function Projects() {
                   Item Inventory System
                 </h3>
                 <div style={{ display: "flex" }}>
-                  <div class="vue-section">
-                    <div class="screenshot-img">
+                  <div className="vue-section">
+                    <div className="screenshot-img">
                       <ReactPlayer
                         className="react-player fixed-bottom"
                         url="videos/add-chopsticks-item.mp4"
@@ -172,7 +184,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div class="screenshot-section sc8 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="screenshot-section sc8 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
                   Chazydes
@@ -181,8 +193,8 @@ export default function Projects() {
                   Item Inventory System
                 </h3>
                 <div style={{ display: "flex" }}>
-                  <div class="vue-section">
-                    <div class="screenshot-img">
+                  <div className="vue-section">
+                    <div className="screenshot-img">
                       <ReactPlayer
                         className="react-player fixed-bottom"
                         url="videos/items-out-of-stock.mp4"
@@ -198,7 +210,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div class="screenshot-section sc9 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="screenshot-section sc9 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
                   Chazydes
@@ -207,8 +219,8 @@ export default function Projects() {
                   Item Inventory System
                 </h3>
                 <div style={{ display: "flex" }}>
-                  <div class="vue-section">
-                    <div class="screenshot-img">
+                  <div className="vue-section">
+                    <div className="screenshot-img">
                       <ReactPlayer
                         className="react-player fixed-bottom"
                         url="videos/add-transaction.mp4"

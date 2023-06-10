@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { AiFillLinkedin, AiOutlineMail, AiOutlineMobile } from "react-icons/ai";
 import { useState } from "react";
-import profilePictureCropped from "../public/profile-picture-cropped.jpg";
+import profilePictureCropped from "../public/vietnam-hat.jpg";
 import stratpointLogo from "../public/stratpoint.png";
 import reactjs_logo from "../public/reactjs_logo.png";
 import vuejs_logo from "../public/vuejs_logo.png";
@@ -26,10 +26,13 @@ export default function Home() {
       <Navbar />
       <main className="px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="body-section min-h-screen ">
-          <Carousel showArrows="true">
-            <div class="profile-banner shadow-lg p-10 rounded-xl dark:bg-white">
-              <div class="profile-banner-pic rounded-lg overflow-hidden">
-                <Image src={profilePictureCropped} />
+          <Carousel showArrows="true" showThumbs={false}>
+            <div className="profile-banner shadow-lg p-10 rounded-xl dark:bg-white">
+              <div className="profile-banner-pic rounded-lg overflow-hidden">
+                <Image
+                  src={profilePictureCropped}
+                  alt="profilePictureCropped"
+                />
               </div>
               <div className="profile-banner-details">
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
@@ -47,7 +50,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
               <div className="tech-stack-details">
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
                   Tech Stack
@@ -56,17 +59,17 @@ export default function Home() {
                   Frontend
                 </h3>
                 <div style={{ display: "flex" }}>
-                  <div class="react-section">
-                    <div class="tech-stack-img rounded-lg overflow-hidden">
-                      <Image src={reactjs_logo} />
+                  <div className="react-section">
+                    <div className="tech-stack-img rounded-lg overflow-hidden">
+                      <Image src={reactjs_logo} alt="reactjs_logo" />
                     </div>
                     <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
                       ReactJS
                     </h3>
                   </div>
-                  <div class="vue-section">
-                    <div class="tech-stack-img rounded-lg overflow-hidden">
-                      <Image src={vuejs_logo} />
+                  <div className="vue-section">
+                    <div className="tech-stack-img rounded-lg overflow-hidden">
+                      <Image src={vuejs_logo} alt="vuejs_logo" />
                     </div>
                     <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
                       VueJS
@@ -75,7 +78,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
               <div className="tech-stack-details">
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
                   Tech Stack
@@ -84,9 +87,9 @@ export default function Home() {
                   Backend
                 </h3>
                 <div style={{ display: "flex" }}>
-                  <div class="react-section">
-                    <div class="tech-stack-img rounded-lg overflow-hidden">
-                      <Image src={nodejs_logo} />
+                  <div className="react-section">
+                    <div className="tech-stack-img rounded-lg overflow-hidden">
+                      <Image src={nodejs_logo} alt="nodejs_logo" />
                     </div>
                     <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
                       NodeJS
@@ -95,7 +98,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
               <div className="tech-stack-details">
                 <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
                   Tech Stack
@@ -105,24 +108,24 @@ export default function Home() {
                 </h3>
                 <div style={{ display: "flex" }}>
                   <div>
-                    <div class="tech-stack-img rounded-lg overflow-hidden">
-                      <Image src={git_logo} />
+                    <div className="tech-stack-img rounded-lg overflow-hidden">
+                      <Image src={git_logo} alt="git_logo" />
                     </div>
                     <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
                       Git
                     </h3>
                   </div>
                   <div>
-                    <div class="tech-stack-img rounded-lg overflow-hidden">
-                      <Image src={github_logo} />
+                    <div className="tech-stack-img rounded-lg overflow-hidden">
+                      <Image src={github_logo} alt="github_logo" />
                     </div>
                     <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
                       Github
                     </h3>
                   </div>
                   <div>
-                    <div class="tech-stack-img rounded-lg overflow-hidden">
-                      <Image src={gitlab_logo} />
+                    <div className="tech-stack-img rounded-lg overflow-hidden">
+                      <Image src={gitlab_logo} alt="gitlab_logo" />
                     </div>
                     <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
                       Gitlab
@@ -136,7 +139,7 @@ export default function Home() {
         <section>
           <div className="about-me my-8">
             <h3 className="text-3xl py-1 dark:text-white ">About me</h3>
-            <hr class="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
+            <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Currently working as a Software Engineer which specializes in
               <span className="text-teal-500"> Frontend Development </span>
@@ -153,11 +156,11 @@ export default function Home() {
           </div>
           <div className="work-experience my-8">
             <h3 className="text-3xl py-1 dark:text-white ">Work Experience</h3>
-            <hr class="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
+            <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <div className="stratpoint flex justify-between my-4">
               <div className="basis-1/4">
                 <div className="basis-1/4 flex-1 mx-auto bg-gradient-to-b from-teal-400 rounded-full relative overflow-hidden md:h-84 md:w-84">
-                  <Image src={stratpointLogo} />
+                  <Image src={stratpointLogo} alt="stratpointLogo" />
                 </div>
               </div>
               <div className="basis-1/2">
@@ -188,7 +191,7 @@ export default function Home() {
           </div>
           <div className="qualifications my-8">
             <h3 className="text-3xl py-1 dark:text-white ">Qualifications</h3>
-            <hr class="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
+            <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <div className="work-experiences flex justify-between my-4">
               <div className="basis-1/4">
                 <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -230,7 +233,7 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">
               Skills and Character
             </h3>
-            <hr class="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
+            <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I am creative and always thinking of ideas that are unique and can
               stand-out to others. In the workplace, I am friendly, sociable and
@@ -241,7 +244,7 @@ export default function Home() {
           </div>
           <div className="skills-and-character my-8">
             <h3 className="text-3xl py-1 dark:text-white ">Contact Me</h3>
-            <hr class="my-2 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
+            <hr className="my-2 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 mb-8">
               <div className="flex">
                 <AiOutlineMail className="detail-img-mail m-2" />
