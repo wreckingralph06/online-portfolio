@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { AiFillLinkedin, AiOutlineMail, AiOutlineMobile } from "react-icons/ai";
-import { useState } from "react";
 import profilePictureCropped from "../public/vietnam-hat.jpg";
 import stratpointLogo from "../public/stratpoint.png";
 import reactjs_logo from "../public/reactjs_logo.png";
@@ -9,10 +8,10 @@ import nodejs_logo from "../public/nodejs_logo.png";
 import git_logo from "../public/git_logo.png";
 import github_logo from "../public/github_logo.png";
 import gitlab_logo from "../public/gitlab_logo.png";
-import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Navbar from "/components/Navbar";
+import ImageContainer from "/components/ImageContainer";
 
 export default function Home() {
   return (
@@ -25,25 +24,22 @@ export default function Home() {
 
       <Navbar />
       <main className="px-10 dark:bg-gray-900 md:px-20 lg:px-40">
-        <section className="body-section min-h-screen ">
+        <section className="body-section">
           <Carousel showArrows="true" showThumbs={false}>
-            <div className="profile-banner shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="profile-banner shadow-lg rounded-xl dark:bg-white">
               <div className="profile-banner-pic rounded-lg overflow-hidden">
-                <Image
-                  src={profilePictureCropped}
-                  alt="profilePictureCropped"
-                />
+                <ImageContainer imageKey={profilePictureCropped} />
               </div>
               <div className="profile-banner-details">
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                <p className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
                   Ralph Waldo Candaza
-                </h2>
-                <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
+                </p>
+                <h3 className="text-lg sm:text-lg md:text-xl xl:text-2xl text-center font-medium py-1 mb-2">
                   Software Engineer/
                   <br />
                   Web Developer
                 </h3>
-                <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+                <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-400">
                   <a href="https://www.linkedin.com/in/rwccandaza/">
                     <AiFillLinkedin />
                   </a>
@@ -52,26 +48,28 @@ export default function Home() {
             </div>
             <div className="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
               <div className="tech-stack-details">
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
-                  Tech Stack
-                </h2>
-                <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                  Frontend
-                </h3>
-                <div style={{ display: "flex" }}>
-                  <div className="react-section">
+                <div className="tech-stack-details-header">
+                  <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
+                    Tech Stack
+                  </h2>
+                  <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
+                    Frontend
+                  </h3>
+                </div>
+                <div className="tech-stack-details-body">
+                  <div className="tech-img-and-name">
                     <div className="tech-stack-img rounded-lg overflow-hidden">
-                      <Image src={reactjs_logo} alt="reactjs_logo" />
+                      <ImageContainer imageKey={reactjs_logo} />
                     </div>
-                    <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
+                    <h3 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-small dark:text-teal-600">
                       ReactJS
                     </h3>
                   </div>
-                  <div className="vue-section">
+                  <div className="tech-img-and-name">
                     <div className="tech-stack-img rounded-lg overflow-hidden">
-                      <Image src={vuejs_logo} alt="vuejs_logo" />
+                      <ImageContainer imageKey={vuejs_logo} />
                     </div>
-                    <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
+                    <h3 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-small dark:text-teal-600">
                       VueJS
                     </h3>
                   </div>
@@ -80,18 +78,20 @@ export default function Home() {
             </div>
             <div className="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
               <div className="tech-stack-details">
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
-                  Tech Stack
-                </h2>
-                <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                  Backend
-                </h3>
-                <div style={{ display: "flex" }}>
-                  <div className="react-section">
+                <div className="tech-stack-details-header">
+                  <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
+                    Tech Stack
+                  </h2>
+                  <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
+                    Backend
+                  </h3>
+                </div>
+                <div className="tech-stack-details-body">
+                  <div className="tech-img-and-name">
                     <div className="tech-stack-img rounded-lg overflow-hidden">
-                      <Image src={nodejs_logo} alt="nodejs_logo" />
+                      <ImageContainer imageKey={nodejs_logo} />
                     </div>
-                    <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
+                    <h3 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-small dark:text-teal-600">
                       NodeJS
                     </h3>
                   </div>
@@ -100,34 +100,36 @@ export default function Home() {
             </div>
             <div className="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
               <div className="tech-stack-details">
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
-                  Tech Stack
-                </h2>
-                <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                  Work Tools
-                </h3>
-                <div style={{ display: "flex" }}>
-                  <div>
+                <div className="tech-stack-details-header">
+                  <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
+                    Tech Stack
+                  </h2>
+                  <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
+                    Work Tools
+                  </h3>
+                </div>
+                <div className="tech-stack-details-body">
+                  <div className="tech-img-and-name">
                     <div className="tech-stack-img rounded-lg overflow-hidden">
-                      <Image src={git_logo} alt="git_logo" />
+                      <ImageContainer imageKey={git_logo} />
                     </div>
-                    <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
+                    <h3 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-small dark:text-teal-600">
                       Git
                     </h3>
                   </div>
-                  <div>
+                  <div className="tech-img-and-name">
                     <div className="tech-stack-img rounded-lg overflow-hidden">
-                      <Image src={github_logo} alt="github_logo" />
+                      <ImageContainer imageKey={github_logo} />
                     </div>
-                    <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
+                    <h3 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-small dark:text-teal-600">
                       Github
                     </h3>
                   </div>
-                  <div>
+                  <div className="tech-img-and-name">
                     <div className="tech-stack-img rounded-lg overflow-hidden">
-                      <Image src={gitlab_logo} alt="gitlab_logo" />
+                      <ImageContainer imageKey={gitlab_logo} />
                     </div>
-                    <h3 className="profile-banner-big-name text-center font-small dark:text-teal-600">
+                    <h3 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-small dark:text-teal-600">
                       Gitlab
                     </h3>
                   </div>
@@ -160,7 +162,7 @@ export default function Home() {
             <div className="stratpoint flex justify-between my-4">
               <div className="basis-1/4">
                 <div className="basis-1/4 flex-1 mx-auto bg-gradient-to-b from-teal-400 rounded-full relative overflow-hidden md:h-84 md:w-84">
-                  <Image src={stratpointLogo} alt="stratpointLogo" />
+                  <ImageContainer imageKey={stratpointLogo} />
                 </div>
               </div>
               <div className="basis-1/2">

@@ -26,33 +26,35 @@ export default function Projects() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <Carousel showArrows="true" showThumbs={false}>
-            <div className="screenshot-section sc1 shadow-lg p-10 rounded-xl dark:bg-white">
-              <div>
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
-                  Chazydes
-                </h2>
-                <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                  Item Inventory System
-                </h3>
-                <div style={{ display: "flex" }}>
-                  <div className="vue-section">
-                    <div className="screenshot-img">
-                      <Image
-                        src={ch_dashboard}
-                        alt="ch_dashboard"
-                        priority={true}
-                      />
+            <div className="tech-stack sc1 shadow-lg p-10 rounded-xl dark:bg-white">
+              <div className="tech-stack-details">
+                <div className="tech-stack-details-header">
+                  <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
+                    Chazydes
+                  </h2>
+                  <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
+                    Item Inventory System
+                  </h3>
+                  <div style={{ display: "flex" }}>
+                    <div className="vue-section">
+                      <div className="screenshot-img">
+                        <Image
+                          src={ch_dashboard}
+                          alt="ch_dashboard"
+                          priority={true}
+                        />
+                      </div>
+                      <h4 className="screenshot-label text-center dark:text-teal-600">
+                        Dashboard
+                      </h4>
                     </div>
-                    <h4 className="screenshot-label text-center dark:text-teal-600">
-                      Dashboard
-                    </h4>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="screenshot-section sc2 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="tech-stack sc2 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
@@ -74,9 +76,9 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div className="screenshot-section sc3 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="tech-stack sc3 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
@@ -98,9 +100,9 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div className="screenshot-section sc4 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="tech-stack sc4 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
@@ -122,9 +124,9 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div className="screenshot-section sc5 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="tech-stack sc5 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
@@ -146,9 +148,9 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div className="screenshot-section sc6 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="tech-stack sc6 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
@@ -170,9 +172,9 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div className="screenshot-section sc7 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="tech-stack sc7 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
@@ -196,9 +198,9 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div className="screenshot-section sc8 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="tech-stack sc8 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
@@ -222,9 +224,9 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-            <div className="screenshot-section sc9 shadow-lg p-10 rounded-xl dark:bg-white">
+            <div className="tech-stack sc9 shadow-lg p-10 rounded-xl dark:bg-white">
               <div>
-                <h2 className="profile-banner-big-name text-center font-medium dark:text-teal-600">
+                <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
                   Chazydes
                 </h2>
                 <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
