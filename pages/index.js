@@ -237,11 +237,10 @@ export default function Home() {
             </h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I am creative and always thinking of ideas that are unique and can
-              stand-out to others. In the workplace, I am friendly, sociable and
-              can go along with co-workers and can also work individually. When
-              it comes to concepts, I can teach with creative analogy. On my
-              free time, I am an ispiring 3D Artist and content creator.
+            As a creative thinker, I constantly develop ideas that stand out to peers and professionals. 
+            At work, I am friendly and sociable, making me adaptable to any and all tasks whether done individually or collectively. 
+            Likewise, I teach with creative analogy, especially when it comes to theoretical and practical concepts. 
+            During my free time, I spend the day creating 3D art and publishing game-related content.
             </p>
           </div>
           <div className="skills-and-character my-8">
