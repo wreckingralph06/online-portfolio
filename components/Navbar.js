@@ -37,22 +37,22 @@ export default function Navbar() {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="menu-items absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <Menu.Items className="hamburger-menu-items absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
               <Menu.Item>
-                <NavbarItem navbarItemName={"Home"} />
+                <NavbarItem navbarItemName={"Home"} jumpTo={"#about-me"}/>
               </Menu.Item>
               <Menu.Item>
-                <NavbarItem navbarItemName={"Projects"} />
+                <NavbarItem navbarItemName={"Projects"} jumpTo={"#projects"}/>
               </Menu.Item>
               <Menu.Item>
-                <NavbarItem navbarItemName={"Skills"} />
+                <NavbarItem navbarItemName={"Skills"} jumpTo={"#skills"}/>
               </Menu.Item>
               <Menu.Item>
                 <Link
-                  href="/projects"
-                  className="block px-4 py-2 text-gray-700"
+                  href="#contact-me"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 border-none rounded-md mx-1"
                 >
-                  <p className="text-2xl">Contact Me </p>
+                  <p className="text-2xl text-white">Contact Me </p>
                 </Link>
               </Menu.Item>
             </Menu.Items>
@@ -61,12 +61,12 @@ export default function Navbar() {
 
         <ul className="hamburger-tabs flex items-center">
           <NavbarItem navbarItemName={"About Me"} jumpTo={"#about-me"} />
-          <NavbarItem navbarItemName={"Work Experience"} jumpTo={"#work-experience"} />
+          <NavbarItem navbarItemName={"Projects"} jumpTo={"#projects"} />
           <NavbarItem navbarItemName={"Skills"} jumpTo={"#skills"} />
           <li>
             <Link
               className="bg-gradient-to-r from-cyan-500 text-xl to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-              href="#contact-me"
+              href={"#contact-me"}
             >
               Contact Me
             </Link>
