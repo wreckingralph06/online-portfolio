@@ -32,7 +32,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <Particle />
@@ -44,8 +47,12 @@ export default function Home() {
               <ImageContainer imageKey={profilePictureCropped} />
             </div>
             <div className="profile-banner-details">
-              <p className="text-5xl text-white">Hi I'm Ralph Waldo Candaza!
-              <span className="text-teal-500"><br /> Full-Stack Developer</span></p>
+              <p className="text-5xl text-white">
+                Hi I'm Ralph Waldo Candaza!
+                <span className="text-teal-500">
+                  <br /> Full-Stack Developer
+                </span>
+              </p>
             </div>
           </div>
           {/* <Carousel showArrows="true" showThumbs={false}>
@@ -194,15 +201,11 @@ export default function Home() {
                   <p className="py-1 dark:text-white font-bold">
                     May 2021-Present
                   </p>
-                  <p className="py-1 dark:text-white font-bold">
-                    Project:
-                  </p>
+                  <p className="py-1 dark:text-white font-bold">Project:</p>
                   Hedge Fund Solutions Portal Web Application - A web app for
                   computing and displaying the information of the client’s hedge
                   fund. <br />
-                  <p className="py-1 dark:text-white font-bold">
-                    Role:
-                  </p>
+                  <p className="py-1 dark:text-white font-bold">Role:</p>
                   Frontend/Backend Developer
                   <p className="py-1 dark:text-white font-bold">
                     Frameworks/Languages Used:
@@ -441,7 +444,7 @@ export default function Home() {
                 </div>
               </div>
             </Carousel>
-          </div> 
+          </div>
           <div id="skills" className="skills my-8">
             <h3 className="text-3xl py-1 dark:text-white ">Skills</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
@@ -483,15 +486,16 @@ export default function Home() {
             </div>
           </div>
           <div id="character" className="character my-8">
-            <h3 className="text-3xl py-1 dark:text-white ">
-              Character
-            </h3>
+            <h3 className="text-3xl py-1 dark:text-white ">Character</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
-            As a creative thinker, I constantly develop ideas that stand out to peers and professionals. 
-            At work, I am friendly and sociable, making me adaptable to any and all tasks whether done individually or collectively. 
-            Likewise, I teach with creative analogy, especially when it comes to theoretical and practical concepts. 
-            During my free time, I spend the day creating 3D art and publishing game-related content.
+              As a creative thinker, I constantly develop ideas that stand out
+              to peers and professionals. At work, I am friendly and sociable,
+              making me adaptable to any and all tasks whether done individually
+              or collectively. Likewise, I teach with creative analogy,
+              especially when it comes to theoretical and practical concepts.
+              During my free time, I spend the day creating 3D art and
+              publishing game-related content.
             </p>
           </div>
           <div id="contact-me" className="contact-me my-8">

@@ -7,12 +7,14 @@
   position: sticky;
   top: 0;
   z-index: 40;
-  background: hsla(0,0%,100%,.09);
-  box-shadow: 0 4px 30px rgba(0,0,0,.1);
+  background: hsla(0, 0%, 100%, 0.09);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .navbar-section {
+    padding-left: 64px;
+    padding-right: 64px;
     position: sticky;
     top: 0;
     z-index: 40;
@@ -85,7 +87,7 @@
 }
 
 .body-section p {
-  font-size: calc(15px + .39063vw);
+  font-size: calc(15px + 0.39063vw);
   line-height: 40px;
 }
 
