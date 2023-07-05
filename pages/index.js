@@ -43,7 +43,7 @@ export default function Home() {
       <main className="main-body px-10 md:px-20 lg:px-40">
         <section className="intro-section">
           <div className="profile-banner shadow-lg rounded-xl">
-            <div className="profile-banner-pic rounded-lg overflow-hidden">
+            <div className="profile-banner-pic rounded-lg">
               <ImageContainer imageKey={profilePictureCropped} />
             </div>
             <div className="profile-banner-details">
@@ -187,9 +187,9 @@ export default function Home() {
             </p>
           </div>
           <div id="work-experience" className="work-experience my-8">
-            <h3 className="text-3xl py-1 dark:text-white ">Work Experience</h3>
+            <h3 className="work-experience-label text-3xl py-1 dark:text-white ">Work Experience</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
-            <div className="stratpoint flex justify-between my-4">
+            <div className="stratpoint flex justify-center my-4">
               <div className="company-pic">
                 <ImageContainer imageKey={stratpointLogo} />
               </div>
@@ -202,11 +202,14 @@ export default function Home() {
                     May 2021-Present
                   </p>
                   <p className="py-1 dark:text-white font-bold">Project:</p>
+                  <p>
                   Hedge Fund Solutions Portal Web Application - A web app for
                   computing and displaying the information of the client’s hedge
-                  fund. <br />
+                  fund. 
+                  </p>
+                  <br />
                   <p className="py-1 dark:text-white font-bold">Role:</p>
-                  Frontend/Backend Developer
+                  <p>Frontend/Backend Developer</p>
                   <p className="py-1 dark:text-white font-bold">
                     Frameworks/Languages Used:
                   </p>
@@ -502,15 +505,15 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">Contact Me</h3>
             <hr className="my-2 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 mb-8">
-              <div className="flex">
+              <div>
                 <AiOutlineMail className="detail-img-mail m-2" />
                 <p>- ralphwaldocandaza@gmail.com </p>
               </div>
-              <div className="flex">
+              <div>
                 <AiOutlineMobile className="detail-img-mobile m-2" />
                 <p>- +63 945 143 7325 </p>
               </div>
-              <div className="flex">
+              <div>
                 <AiFillLinkedin className="detail-img-linkedin m-2" />
                 <p>- linkedin.com/in/rwccandaza </p>
               </div>
