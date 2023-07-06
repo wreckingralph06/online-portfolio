@@ -55,118 +55,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-          {/* <Carousel showArrows="true" showThumbs={false}>
-            <div className="profile-banner shadow-lg rounded-xl dark:bg-white">
-              <div className="profile-banner-pic rounded-lg overflow-hidden">
-                <ImageContainer imageKey={profilePictureCropped} />
-              </div>
-              <div className="profile-banner-details">
-                <p className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
-                  Ralph Waldo Candaza
-                </p>
-                <h3 className="text-lg sm:text-lg md:text-xl xl:text-2xl text-center font-medium py-1 mb-2">
-                  Software Engineer/
-                  <br />
-                  Web Developer
-                </h3>
-                <div className="text-5xl flex justify-center gap-16 text-gray-600 dark:text-gray-400">
-                  <a href="https://www.linkedin.com/in/rwccandaza/">
-                    <AiFillLinkedin />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
-              <div className="tech-stack-details">
-                <div className="tech-stack-details-header">
-                  <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
-                    Tech Stack
-                  </h2>
-                  <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                    Frontend
-                  </h3>
-                </div>
-                <div className="tech-stack-details-body">
-                  <div className="tech-img-and-name">
-                    <div className="tech-stack-img rounded-lg overflow-hidden">
-                      <ImageContainer imageKey={reactjs_logo} />
-                    </div>
-                    <h3 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-small dark:text-teal-600">
-                      ReactJS
-                    </h3>
-                  </div>
-                  <div className="tech-img-and-name">
-                    <div className="tech-stack-img rounded-lg overflow-hidden">
-                      <ImageContainer imageKey={vuejs_logo} />
-                    </div>
-                    <h3 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-small dark:text-teal-600">
-                      VueJS
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
-              <div className="tech-stack-details">
-                <div className="tech-stack-details-header">
-                  <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
-                    Tech Stack
-                  </h2>
-                  <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                    Backend
-                  </h3>
-                </div>
-                <div className="tech-stack-details-body">
-                  <div className="tech-img-and-name">
-                    <div className="tech-stack-img rounded-lg overflow-hidden">
-                      <ImageContainer imageKey={nodejs_logo} />
-                    </div>
-                    <h3 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-small dark:text-teal-600">
-                      NodeJS
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="tech-stack shadow-lg p-10 rounded-xl dark:bg-white">
-              <div className="tech-stack-details">
-                <div className="tech-stack-details-header">
-                  <h2 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-medium dark:text-teal-600">
-                    Tech Stack
-                  </h2>
-                  <h3 className="text-2xl text-center py-2 md:text-3xl mb-2">
-                    Work Tools
-                  </h3>
-                </div>
-                <div className="tech-stack-details-body">
-                  <div className="tech-img-and-name">
-                    <div className="tech-stack-img rounded-lg overflow-hidden">
-                      <ImageContainer imageKey={git_logo} />
-                    </div>
-                    <h3 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-small dark:text-teal-600">
-                      Git
-                    </h3>
-                  </div>
-                  <div className="tech-img-and-name">
-                    <div className="tech-stack-img rounded-lg overflow-hidden">
-                      <ImageContainer imageKey={github_logo} />
-                    </div>
-                    <h3 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-small dark:text-teal-600">
-                      Github
-                    </h3>
-                  </div>
-                  <div className="tech-img-and-name">
-                    <div className="tech-stack-img rounded-lg overflow-hidden">
-                      <ImageContainer imageKey={gitlab_logo} />
-                    </div>
-                    <h3 className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-center font-small dark:text-teal-600">
-                      Gitlab
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Carousel> */}
         </section>
         <section className="body-section my-4">
           <div id="about-me" className="about-me my-8">
@@ -203,9 +91,9 @@ export default function Home() {
                   </p>
                   <p className="py-1 dark:text-white font-bold">Project:</p>
                   <p>
-                  Hedge Fund Solutions Portal Web Application - A web app for
-                  computing and displaying the information of the client’s hedge
-                  fund. 
+                    Hedge Fund Solutions Portal Web Application - A web app for
+                    computing and displaying the information of the client’s hedge
+                    fund.
                   </p>
                   <br />
                   <p className="py-1 dark:text-white font-bold">Role:</p>
@@ -501,7 +389,7 @@ export default function Home() {
               publishing game-related content.
             </p>
           </div>
-          <div id="contact-me" className="contact-me my-8">
+          <div id="contactme" className="contactme my-8">
             <h3 className="text-3xl py-1 dark:text-white ">Contact Me</h3>
             <hr className="my-2 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 mb-8">
