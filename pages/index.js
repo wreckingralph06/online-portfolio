@@ -40,7 +40,7 @@ export default function Home() {
 
       <Particle />
       <Navbar />
-      <main className="main-body px-10 md:px-20 lg:px-40">
+      <main className="main-body ">
         <section className="intro-section">
           <div className="profile-banner shadow-lg rounded-xl">
             <div className="profile-banner-pic rounded-lg">
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </section>
         <section className="body-section my-4">
-          <div id="about-me" className="about-me my-8">
+          <div id="about-me" className="about-me py-12 px-10 md:px-20 lg:px-40 dark:bg-slate-800">
             <h3 className="text-3xl py-1 dark:text-white ">About me</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <p className="py-2 text-gray-800 dark:text-gray-200">
@@ -74,10 +74,10 @@ export default function Home() {
               will also improve the upskilling of my technical knowledge.
             </p>
           </div>
-          <div id="work-experience" className="work-experience my-8">
+          <div id="work-experience" className="work-experience py-6 px-10 md:px-20 lg:px-40 bg-black">
             <h3 className="work-experience-label text-3xl py-1 dark:text-white ">Work Experience</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
-            <div className="stratpoint flex justify-center my-4">
+            <div className="stratpoint flex justify-between my-4">
               <div className="company-pic">
                 <ImageContainer imageKey={stratpointLogo} />
               </div>
@@ -106,7 +106,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div id="projects" className="projects">
+          <div id="projects" className="projects py-12 px-10 md:px-20 lg:px-40 dark:bg-slate-800">
             <h3 className="text-3xl py-1 dark:text-white ">Projects</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <Carousel showArrows="true" showThumbs={false}>
@@ -336,7 +336,7 @@ export default function Home() {
               </div>
             </Carousel>
           </div>
-          <div id="skills" className="skills my-8">
+          <div id="skills" className="skills py-6 px-10 md:px-20 lg:px-40 bg-black">
             <h3 className="text-3xl py-1 dark:text-white ">Skills</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <div className="work-experiences flex justify-between my-4">
@@ -376,7 +376,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div id="character" className="character my-8">
+          <div id="character" className="character py-12 px-10 md:px-20 lg:px-40 dark:bg-slate-800">
             <h3 className="text-3xl py-1 dark:text-white ">Character</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <p className="py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -389,7 +389,7 @@ export default function Home() {
               publishing game-related content.
             </p>
           </div>
-          <div id="contactme" className="contactme my-8">
+          <div id="contactme" className="contactme py-6 px-10 md:px-20 lg:px-40 bg-black">
             <h3 className="text-3xl py-1 dark:text-white ">Contact Me</h3>
             <hr className="my-2 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 mb-8">
