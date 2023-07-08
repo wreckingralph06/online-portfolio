@@ -70,6 +70,8 @@
 }
 
 .profile-banner-details {
+  display: flex;
+  justify-content: center;
   width: 60%;
   margin-top: 60px;
 }
@@ -186,6 +188,7 @@
 .hamburger-only {
   display: none;
 }
+
 .hamburger-tabs {
   display: flex;
 }
@@ -201,8 +204,12 @@
   }
 }
 
-@media only screen and (max-width: 300px){
-  h1, h2, h3, p {
+@media only screen and (max-width: 300px) {
+
+  h1,
+  h2,
+  h3,
+  p {
     /* font-size: 20px !important;
     line-height: 24px !important; */
     font-size: 80% !important;
@@ -224,6 +231,7 @@
 .hamburger-menu-items li:hover {
   background-color: grey;
 }
+
 .hamburger-menu-items a:hover {
   background-color: grey;
 }

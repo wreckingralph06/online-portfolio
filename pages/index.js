@@ -22,6 +22,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Navbar from "/components/Navbar";
 import ImageContainer from "/components/ImageContainer";
 import Particle from "/components/Particle";
+import Typist from 'react-typist-component';
 
 export default function Home() {
   return (
@@ -48,10 +49,14 @@ export default function Home() {
             </div>
             <div className="profile-banner-details">
               <p className="text-5xl text-white">
-                Hi I'm Ralph Waldo Candaza!
-                <span className="text-teal-500">
-                  <br /> Full-Stack Developer
-                </span>
+                <Typist typingDelay={50} cursor={<span className='cursor'>|</span>}>
+                  Hi, I'm Ralph Waldo Candaza!
+                  <Typist.Delay ms={1000} />
+                  <span className="text-teal-500">
+                    <br /> Fullstack Developer
+                  </span>
+                  <Typist.Delay ms={3000} />
+                </Typist>
               </p>
             </div>
           </div>
