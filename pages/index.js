@@ -3,12 +3,16 @@ import { AiFillLinkedin, AiOutlineMail, AiOutlineMobile } from "react-icons/ai";
 import profilePictureCropped from "../public/vietnam-hat-cropped.jpg";
 import stratpointLogo from "../public/stratpoint.png";
 import Image from "next/image";
-import reactjs_logo from "../public/reactjs_logo.png";
-import vuejs_logo from "../public/vuejs_logo.png";
-import nodejs_logo from "../public/nodejs_logo.png";
-import git_logo from "../public/git_logo.png";
-import github_logo from "../public/github_logo.png";
-import gitlab_logo from "../public/gitlab_logo.png";
+import reactjs_logo from "../public/svg-icons/icons8-react-80.svg";
+import vuejs_logo from "../public/svg-icons/icons8-vue-js.svg";
+import nodejs_logo from "../public/svg-icons/icons8-nodejs.svg";
+import git_logo from "../public/svg-icons/icons8-git.svg";
+import github_logo from "../public/svg-icons/icons8-github.svg";
+import gitlab_logo from "../public/svg-icons/icons8-gitlab.svg";
+import redux_logo from "../public/svg-icons/icons8-redux.svg";
+import mysql_logo from "../public/svg-icons/icons8-mysql.svg";
+import mongodb_logo from "../public/svg-icons/icons8-mongodb.svg";
+import docker_logo from "../public/svg-icons/icons8-docker.svg";
 import ch_dashboard from "../public/chazydes/ch_dashboard.png";
 import ch_item_list from "../public/chazydes/ch_item_list.png";
 import ch_item_details_page from "../public/chazydes/ch_item_details_page.png";
@@ -45,7 +49,7 @@ export default function Home() {
         <section className="intro-section">
           <div className="profile-banner shadow-lg rounded-xl">
             <div className="profile-banner-pic rounded-lg">
-              <ImageContainer imageKey={profilePictureCropped} />
+              <ImageContainer imgClass={"profile-img"} imageKey={profilePictureCropped} />
             </div>
             <div className="profile-banner-details">
               <p className="text-5xl text-white">
@@ -84,7 +88,7 @@ export default function Home() {
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <div className="stratpoint flex justify-between my-4">
               <div className="company-pic">
-                <ImageContainer imageKey={stratpointLogo} />
+                <ImageContainer imgClass={"profile-img"} imageKey={stratpointLogo} />
               </div>
               <div className="basis-1/2">
                 <div className="py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -344,40 +348,86 @@ export default function Home() {
           <div id="skills" className="skills py-6 px-10 md:px-20 lg:px-40 bg-black">
             <h3 className="text-3xl py-1 dark:text-white ">Skills</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
-            <div className="work-experiences flex justify-between my-4">
-              <div className="basis-1/4">
-                <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                  Work Experience Languages and Tools Used
-                </p>
+            <div className="flex flex-wrap other-languages my-4 py-8">
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={reactjs_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>React</p>
+                </span>
               </div>
-              <div className="basis-1/2">
-                <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                  ReactJS, React-Redux, AntD, NodeJS, Sequelize
-                </p>
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={redux_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>Redux</p>
+                </span>
               </div>
-            </div>
-            <div className="work-tools flex justify-between my-4">
-              <div className="basis-1/4">
-                <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                  Work Tools
-                </p>
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={vuejs_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>Vue</p>
+                </span>
               </div>
-              <div className="basis-1/2">
-                <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                  Git, Gitlab, Docker, Postman, Swagger, Dbeaver
-                </p>
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={nodejs_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>Node</p>
+                </span>
               </div>
-            </div>
-            <div className="other-languages flex justify-between my-4">
-              <div className="basis-1/4">
-                <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                  Other Languages and Framework Used
-                </p>
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={git_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>Git</p>
+                </span>
               </div>
-              <div className="basis-1/2">
-                <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                  VueJS, Bootstrap, Tailwind, C, Python, Java
-                </p>
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={github_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>Github</p>
+                </span>
+              </div>
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={gitlab_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>Gitlab</p>
+                </span>
+              </div>
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={mysql_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>MySQL</p>
+                </span>
+              </div>
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={mongodb_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>MongoDB</p>
+                </span>
+              </div>
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={docker_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>Docker</p>
+                </span>
               </div>
             </div>
           </div>
