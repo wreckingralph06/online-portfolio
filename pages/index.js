@@ -1,5 +1,7 @@
 import Head from "next/head";
-import { AiFillLinkedin, AiOutlineMail, AiOutlineMobile } from "react-icons/ai";
+import envelope_icon from "../public/svg-icons/email-1-svgrepo-com.svg";
+import phone_icon from "../public/svg-icons/phone-calling-svgrepo-com.svg";
+import linkedin_icon from "../public/svg-icons/linkedin-svgrepo-com.svg";
 import profilePictureCropped from "../public/vietnam-hat-cropped.jpg";
 import stratpointLogo from "../public/stratpoint.png";
 import Image from "next/image";
@@ -186,7 +188,7 @@ export default function Home() {
                           priority={true}
                         />
                       </div>
-                      <h4 className="screenshot-label text-center dark:text-teal-600">
+                      <h4 className="screenshot-label md:text-xs text-center dark:text-teal-600">
                         Item Details Page
                       </h4>
                     </div>
@@ -448,17 +450,32 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">Contact Me</h3>
             <hr className="my-2 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <div className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 mb-8">
-              <div>
-                <AiOutlineMail className="detail-img-mail m-2" />
-                <p>- ralphwaldocandaza@gmail.com </p>
+              <div className="flex items-center">
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={envelope_icon} />
+                </div>
+                <div>
+                  <h3 className="contact-details-label">Mail</h3>
+                  <span className="contact-details-text">ralphwaldocandaza@gmail.com</span>
+                </div>
               </div>
-              <div>
-                <AiOutlineMobile className="detail-img-mobile m-2" />
-                <p>- +63 945 143 7325 </p>
+              <div className="flex items-center">
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={phone_icon} />
+                </div>
+                <div>
+                  <h3 className="contact-details-label">Contact No.</h3>
+                  <span className="contact-details-text">+63 945 143 7325</span>
+                </div>
               </div>
-              <div>
-                <AiFillLinkedin className="detail-img-linkedin m-2" />
-                <p>- linkedin.com/in/rwccandaza </p>
+              <div className="flex items-center">
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={linkedin_icon} />
+                </div>
+                <div>
+                  <h3 className="contact-details-label">LinkedIn</h3>
+                  <span className="contact-details-text">linkedin.com/in/rwccandaza</span>
+                </div>
               </div>
             </div>
           </div>
