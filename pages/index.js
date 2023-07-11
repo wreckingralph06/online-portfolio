@@ -88,11 +88,11 @@ export default function Home() {
           <div id="work-experience" className="work-experience py-6 px-10 md:px-20 lg:px-40 bg-black">
             <h3 className="work-experience-label text-3xl py-1 dark:text-white ">Work Experience</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
-            <div className="stratpoint flex justify-between my-4">
+            <div className="stratpoint flex flex-wrap justify-between my-4">
               <div className="company-pic">
                 <ImageContainer imgClass={"profile-img"} imageKey={stratpointLogo} />
               </div>
-              <div className="basis-1/2">
+              <div className="basis-1/2 ml-12">
                 <div className="py-2 leading-8 text-gray-800 dark:text-gray-200">
                   <p className="py-1 dark:text-white font-bold">
                     Stratpoint Technologies Inc.

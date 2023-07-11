@@ -52,7 +52,8 @@
 
 .company-pic {
   width: 150px;
-  height: 150px;
+  height: auto;
+  margin-left: 50px;
 }
 
 @media only screen and (max-width: 300px) {
