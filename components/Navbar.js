@@ -39,13 +39,31 @@ export default function Navbar() {
           >
             <Menu.Items className="hamburger-menu-items absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
               <Menu.Item>
-                <NavbarItem navbarItemName={"Home"} jumpTo={"#about-me"} />
+                {/* <NavbarItem navbarItemName={"Home"} jumpTo={"#about-me"} /> */}
+                <Link
+                  href="#about-me"
+                  className="bg-gradient-to-r px-4 py-2 border-none rounded-md mx-1"
+                >
+                  <div className="text-2xl">Home </div>
+                </Link>
               </Menu.Item>
               <Menu.Item>
-                <NavbarItem navbarItemName={"Projects"} jumpTo={"#projects"} />
+                {/* <NavbarItem navbarItemName={"Projects"} jumpTo={"#projects"} /> */}
+                <Link
+                  href="#projects"
+                  className="bg-gradient-to-r px-4 py-2 border-none rounded-md mx-1"
+                >
+                  <div className="text-2xl">Projects </div>
+                </Link>
               </Menu.Item>
               <Menu.Item>
-                <NavbarItem navbarItemName={"Skills"} jumpTo={"#skills"} />
+                {/* <NavbarItem navbarItemName={"Skills"} jumpTo={"#skills"} /> */}
+                <Link
+                  href="#skills"
+                  className="bg-gradient-to-r px-4 py-2 border-none rounded-md mx-1"
+                >
+                  <div className="text-2xl">Skills </div>
+                </Link>
               </Menu.Item>
               <Menu.Item>
                 <Link
