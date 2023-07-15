@@ -6,7 +6,7 @@ import NavbarItem from "./NavbarItem";
 export default function Navbar() {
   return (
     <nav
-      className="navbar-section flex items-center justify-between py-14 px-32 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200"
+      className="navbar-section flex items-center justify-between py-8 px-32 backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200"
     >
       <h1 className="text-4xl text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400">
         <Link href="/">Waldo Candaza</Link>
