@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </section>
         <section className="body-section my-4">
-          <div id="about-me" className="about-me py-12 px-10 md:px-20 lg:px-40 dark:bg-slate-800">
+          <div id="about-me" className="about-me py-20 px-10 md:px-20 lg:px-40 dark:bg-slate-800 min-h-[90vh]">
             <h3 className="text-3xl py-1 dark:text-white ">About me</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <p className="py-2 text-gray-800 dark:text-gray-200">
@@ -85,7 +85,7 @@ export default function Home() {
               will also improve the upskilling of my technical knowledge.
             </p>
           </div>
-          <div id="work-experience" className="work-experience py-6 px-10 md:px-20 lg:px-40 bg-black">
+          <div id="work-experience" className="work-experience py-16 px-10 md:px-20 lg:px-40 bg-black min-h-[90vh]">
             <h3 className="work-experience-label text-3xl py-1 dark:text-white ">Work Experience</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <div className="stratpoint flex flex-wrap justify-between my-4">
@@ -117,7 +117,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div id="projects" className="projects py-12 px-10 md:px-20 lg:px-40 dark:bg-slate-800">
+          <div id="projects" className="projects py-16 px-10 md:px-20 lg:px-40 dark:bg-slate-800 min-h-[90vh]">
             <h3 className="text-3xl py-1 dark:text-white ">Projects</h3>
             <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
             <Carousel showArrows="true" showThumbs={false}>
