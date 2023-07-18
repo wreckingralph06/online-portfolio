@@ -15,6 +15,7 @@ import redux_logo from "../public/svg-icons/icons8-redux.svg";
 import mysql_logo from "../public/svg-icons/icons8-mysql.svg";
 import mongodb_logo from "../public/svg-icons/icons8-mongodb.svg";
 import docker_logo from "../public/svg-icons/icons8-docker.svg";
+import nextjs_logo from "../public/svg-icons/nextjs-svgrepo-com.svg";
 import ch_dashboard from "../public/chazydes/ch_dashboard.png";
 import ch_item_list from "../public/chazydes/ch_item_list.png";
 import ch_item_details_page from "../public/chazydes/ch_item_details_page.png";
@@ -61,10 +62,18 @@ export default function Home() {
                   <span className="text-teal-500">
                     <br /> Fullstack Developer
                   </span>
-                  <Typist.Delay ms={3000} />
+                  {/* <div className="mt-2 flex justify-center items-center">
+                    <div className="mx-4 icon-container">
+                      <ImageContainer imgClass={"icon-img"} imageKey={linkedin_icon} />
+                    </div>
+                    <div className="mx-4 icon-container">
+                      <ImageContainer imgClass={"icon-img"} imageKey={github_logo} />
+                    </div>
+                  </div> */}
                 </Typist>
               </p>
             </div>
+
           </div>
         </section>
         <section className="body-section my-4">
@@ -365,6 +374,14 @@ export default function Home() {
                 </div>
                 <span style={{ fontSize: '14px' }}>
                   <p style={{ color: "white" }}>Redux</p>
+                </span>
+              </div>
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={nextjs_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>Next</p>
                 </span>
               </div>
               <div className="flex flex-col items-center" >
