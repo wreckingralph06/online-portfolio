@@ -7,6 +7,8 @@ import stratpointLogo from "../public/stratpoint.png";
 import Image from "next/image";
 import reactjs_logo from "../public/svg-icons/icons8-react-80.svg";
 import vuejs_logo from "../public/svg-icons/icons8-vue-js.svg";
+import tailwind_logo from "../public/svg-icons/tailwindcss-icon.svg";
+import antdesign_logo from "../public/svg-icons/ant-design-svgrepo-com.svg";
 import nodejs_logo from "../public/svg-icons/icons8-nodejs.svg";
 import git_logo from "../public/svg-icons/icons8-git.svg";
 import github_logo from "../public/svg-icons/icons8-github.svg";
@@ -390,6 +392,22 @@ export default function Home() {
                 </div>
                 <span style={{ fontSize: '14px' }}>
                   <p style={{ color: "white" }}>Vue</p>
+                </span>
+              </div>
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={tailwind_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>Tailwind</p>
+                </span>
+              </div>
+              <div className="flex flex-col items-center" >
+                <div className="mx-4 icon-container">
+                  <ImageContainer imgClass={"icon-img"} imageKey={antdesign_logo} />
+                </div>
+                <span style={{ fontSize: '14px' }}>
+                  <p style={{ color: "white" }}>Antd</p>
                 </span>
               </div>
               <div className="flex flex-col items-center" >
