@@ -34,14 +34,20 @@ function ContactMeSection() {
           </div>
         </div>
         <div className="flex items-center">
-          <div className="mx-4 icon-container">
+          <a
+            className="mx-4 icon-container"
+            href="https://www.linkedin.com/in/rwccandaza/"
+          >
             <ImageContainer imgClass={"icon-img"} imageKey={linkedin_icon} />
-          </div>
+          </a>
           <div>
             <h3 className="contact-details-label">LinkedIn</h3>
-            <span className="contact-details-text">
-              linkedin.com/in/rwccandaza
-            </span>
+            <a
+              className="contact-details-text"
+              href="https://www.linkedin.com/in/rwccandaza/"
+            >
+              https://www.linkedin.com/in/rwccandaza/
+            </a>
           </div>
         </div>
       </div>
