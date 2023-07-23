@@ -3,11 +3,10 @@ import Navbar from "/components/Navbar";
 import ProfileBannerSection from "./sections/ProfileBannerSection";
 import AboutMeSection from "/pages/sections/AboutMeSection";
 import WorkExperienceSection from "/pages/sections/WorkExperienceSection";
-import ProjectsCarousel from "/components/ProjectsCarousel";
+import ProjectsSection from "/pages/sections/ProjectsSection";
 import SkillsSection from "/pages/sections/SkillsSection";
 import CharacterSection from "/pages/sections/CharacterSection";
 import ContactMeSection from "/pages/sections/ContactMeSection";
-
 import Particle from "/components/Particle";
 
 export default function Home() {
@@ -33,7 +32,7 @@ export default function Home() {
         <div className="body-section my-4">
           <AboutMeSection />
           <WorkExperienceSection />
-          <ProjectsCarousel />
+          <ProjectsSection />
           <SkillsSection />
           <CharacterSection />
           <ContactMeSection />
