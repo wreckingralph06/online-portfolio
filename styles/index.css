@@ -280,7 +280,7 @@
   grid-gap: 15px;
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(2,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(250px,500px));
 }
 
 .project-container {
@@ -301,6 +301,18 @@
   justify-content: start !important;
   border-radius: 8px !important;
   object-position: left top !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .project-image {
+    display: flex !important;
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 120px !important;
+    justify-content: start !important;
+    border-radius: 8px !important;
+    object-position: left top !important;
+  }
 }
 
 .project-header {
