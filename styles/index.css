@@ -280,7 +280,7 @@
   grid-gap: 15px;
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(auto-fill,minmax(250px,500px));
+  grid-template-columns: repeat(auto-fill,minmax(250px,400px));
 }
 
 .project-container {
