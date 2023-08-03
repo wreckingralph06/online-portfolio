@@ -3,6 +3,7 @@ import reactjs_logo from "../../public/svg-icons/icons8-react-80.svg";
 import vuejs_logo from "../../public/svg-icons/icons8-vue-js.svg";
 import tailwind_logo from "../../public/svg-icons/tailwindcss-icon.svg";
 import antdesign_logo from "../../public/svg-icons/ant-design-svgrepo-com.svg";
+import materialui_logo from "../../public/svg-icons/icons8-material-ui.svg";
 import nodejs_logo from "../../public/svg-icons/icons8-nodejs.svg";
 import git_logo from "../../public/svg-icons/icons8-git.svg";
 import github_logo from "../../public/svg-icons/icons8-github.svg";
@@ -66,6 +67,14 @@ function SkillsSection() {
           </div>
           <span style={{ fontSize: "14px" }}>
             <p style={{ color: "white" }}>Antd</p>
+          </span>
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="mx-4 icon-container">
+            <ImageContainer imgClass={"icon-img"} imageKey={materialui_logo} />
+          </div>
+          <span style={{ fontSize: "14px" }}>
+            <p style={{ color: "white" }}>MUI</p>
           </span>
         </div>
         <div className="flex flex-col items-center">
