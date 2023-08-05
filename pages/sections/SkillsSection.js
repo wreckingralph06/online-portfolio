@@ -121,8 +121,8 @@ function SkillsSection() {
           <div className="mx-4 icon-container">
             <ImageContainer imgClass={"icon-img"} imageKey={mongodb_logo} />
           </div>
-          <span style={{ fontSize: "14px" }}>
-            <p style={{ color: "white" }}>MongoDB</p>
+          <span style={{ fontSize: "12px" }}>
+            <p style={{ color: "white", fontSize: "14px" }}>MongoDB</p>
           </span>
         </div>
         <div className="flex flex-col items-center">
