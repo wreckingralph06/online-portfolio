@@ -22,7 +22,7 @@
   }
 }
 
-.navbar-section .rightSide #hidden{
+.navbar-section .rightSide .hidden{
   display: flex;
 }
 
@@ -53,7 +53,7 @@
     flex-direction: column;
     align-items: center;
     z-index: 40;
-    background-color: rgb(30 41 59);
+    background: hsla(0, 0%, 100%, 0.09);
   }
 }
 
