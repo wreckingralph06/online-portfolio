@@ -26,6 +26,12 @@
   display: flex;
 }
 
+.navbar-section .rightSide ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar-section .rightSide button {
   display: none
 }

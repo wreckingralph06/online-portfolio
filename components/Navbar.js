@@ -39,7 +39,7 @@ export default function Navbar() {
           />
           <li>
             <Link
-              className="bg-gradient-to-r from-cyan-500 text-xl to-teal-500 text-white px-4 py-2 border-none rounded-md"
+              className="bg-gradient-to-r from-cyan-500 text-xl to-teal-500 text-white px-4 py-2 border-none rounded-md ml-5"
               href={"#contactme"}
               onClick={() => setShowLinks(!showLinks)}
             >
