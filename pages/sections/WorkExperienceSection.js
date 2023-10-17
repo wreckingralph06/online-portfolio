@@ -21,7 +21,8 @@ function WorkExperienceSection() {
             <p className="py-1 dark:text-white font-bold">
               Stratpoint Technologies Inc.
             </p>
-            <p className="py-1 dark:text-white font-bold">May 2021-Present</p>
+            <br />
+            <p className="py-1 dark:text-white font-bold">May 2021-June 2023</p>
             <p className="py-1 dark:text-white font-bold">Project:</p>
             <p>
               Hedge Fund Solutions Portal Web Application - A web app for
@@ -34,7 +35,23 @@ function WorkExperienceSection() {
             <p className="py-1 dark:text-white font-bold">
               Frameworks/Languages Used:
             </p>
-            ReactJS, NodeJS, Antd, Sequelize
+            <p>ReactJS, NodeJS, Antd, Sequelize</p>
+            <br />
+            <p className="py-1 dark:text-white font-bold">
+              July 2023-October 2023
+            </p>
+            <p className="py-1 dark:text-white font-bold">Project:</p>
+            <p>
+              Workspace Booking Application – An internal web/mobile app for
+              employees to reserve office seat before working at the office
+            </p>
+            <br />
+            <p className="py-1 dark:text-white font-bold">Role:</p>
+            <p>Backend Developer</p>
+            <p className="py-1 dark:text-white font-bold">
+              Frameworks/Languages Used:
+            </p>
+            <p>Supabase, Deno, PostgresSQL</p>
           </div>
         </div>
       </div>
