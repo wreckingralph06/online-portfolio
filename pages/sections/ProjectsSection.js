@@ -20,7 +20,7 @@ function ProjectsSection() {
       <hr className="my-4 h-px bg-gray-200 border-2 dark:bg-gray-700"></hr>
       {/* <ProjectsCarousel /> */}
       <Link
-        href="https://zeta-retros-server-az9j64inu-wreckingralph06.vercel.app/products"
+        href="https://zeta-retros-server.vercel.app/products"
         className="project-1"
       >
         <h2 className="text-2xl py-1 dark:text-white ">Zeta-Retros</h2>
